@@ -5,20 +5,28 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "dll": "webpack -p --progress --config ./webpack.dll.conf.js"
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "element-ui": "^2.4.5",
     "vue": "^2.6.11"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-plugin-eslint": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
+    "add-asset-html-webpack-plugin": "^3.2.0",
     "babel-eslint": "^10.1.0",
+    "clean-webpack-plugin": "^4.0.0-alpha.0",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
-    "vue-template-compiler": "^2.6.11"
+    "node-sass": "^4.9.2",
+    "sass-loader": "^7.0.3",
+    "vue-cli-plugin-element": "~1.0.1",
+    "vue-template-compiler": "^2.6.11",
+    "webpack-cli": "^3.2.3"
   },
   "eslintConfig": {
     "root": true,
